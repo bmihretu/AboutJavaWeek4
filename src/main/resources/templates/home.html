@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns: lang="en" th="www.thymeleaf.org">
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+        }
+
+        /* Header/logo Title */
+        .header {
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            background-color: lightskyblue;
+        }
+
+        /* Increase the font size of the heading */
+        .header h1 {
+            font-size: 100px;
+            margin: 0;
+        }
+
+        .header h3 {
+            font-size: 50px;
+
+            margin: 0;
+        }
+
+        /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+        .navbar {
+            overflow: hidden;
+            background-color: white;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        /* Right-aligned link */
+        .navbar a.right {
+            float: right;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: #ddd;
+            font-size: 1.7em;
+            color: red;
+        }
+
+        /* Active/current link */
+        .navbar a.active {
+            background-color: #666;
+            font-size: 1.7em;
+            color: white;
+        }
+
+        /* Column container */
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+
+        img {
+            max-width: 100%;
+            height: 450px;
+            width: 1000px;
+        }
+
+        /* Main column */
+        .main {
+            -ms-flex: 100%; /* IE10 */
+            flex: 100%;
+
+            /*background-image: url("https://res.cloudinary.com/daq1bxdgk/image/upload/v1562867613/Everything_you_can_imagine_is_real._d8yzvi.png");*/
+            height: 1500px;
+            width: auto;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        .header {
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 20px 10px;
+        }
+
+        .header a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 100px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a.logo {
+            font-size: 100px;
+            font-weight: bold;
+        }
+
+        .header a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!--Statring Space-->
+
+
+<div class="row">
+
+    <div class="main">
+
+        <div class="header">
+            <h1 style="font-family: monospace;"><a
+                    href="http://localhost:63342/demo/templates/home.html?_ijt=839s68jttijdinresbd881be1u"
+                    class="logo">
+                <b> Java Bootcamp</b></a>
+            </h1>
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="navbar">
+                <!--<nav class="nav nav-pills nav-justified">-->
+                    <h3 style="font-family: monospace" ;><a class="nav-item nav-link" href="#">Home</a>
+                        <a class="nav-item nav-link" href="about.html">About</a>
+                        <a class="nav-item nav-link" href="authors.html">Author</a>
+                        <a class="nav-item nav-link" href="#">Author</a>
+                        <a class="nav-item nav-link" href="#">Author</a>
+                        <a class="nav-item nav-link" href="#">Author</a>
+                        <a class="nav-item nav-link" href="#">Author</a>
+                        <a class="nav-item nav-link" href="authors.html">Author</a>
+
+                        <!--Create dropdown-->
+                    </h3>
+                </nav>
+
+            </div>
+        </div>
+
+
+        <!--For Ansu Content-->
+
+
+
+        <!--Just space-->
+
+        <div class="footer">
+            <h3 style="font-family: monospace" ;>Website by Bk & Ansu</h3>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
